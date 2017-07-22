@@ -1,0 +1,480 @@
+html,
+body {
+  height: 100%;
+}
+.jd-right-toolbar {
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  color: #fff;
+  z-index: 100;
+}
+.jd-right-toolbar .jd-right-line {
+  position: absolute;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #7a6e6e;
+}
+.jd-right-toolbar .toolbar-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -90px;
+}
+.jd-right-toolbar .toolbar-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.jd-right-toolbar div {
+  position: relative;
+  margin-bottom: 1px;
+}
+.jd-right-toolbar .toolbar-icon:hover {
+  background-color: #c81623;
+}
+.jd-right-toolbar a:hover .toolbar-style {
+  left: -62px;
+  background-color: #c81623;
+}
+.jd-right-toolbar .toolbar-icon {
+  position: relative;
+  _display: block;
+  display: block;
+  background-color: #7a6e6e;
+  width: 34px;
+  height: 35px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.jd-right-toolbar .toolbar-icon i {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/toolbar.png") no-repeat;
+}
+.jd-right-toolbar .toolbar-icon .icon1 {
+  background-position: -55px -5px;
+}
+.jd-right-toolbar .toolbar-icon .icon2 {
+  background-position: -55px -55px;
+}
+.jd-right-toolbar .toolbar-icon .icon3 {
+  background-position: -55px -105px;
+}
+.jd-right-toolbar .toolbar-icon .icon4 {
+  background-position: -55px -155px;
+}
+.jd-right-toolbar .toolbar-icon .icon5 {
+  background-position: -195px -155px;
+}
+.jd-right-toolbar .toolbar-icon .icon6 {
+  background-position: -55px -255px;
+}
+.jd-right-toolbar .toolbar-icon .icon7 {
+  background-position: -55px -305px;
+}
+.jd-right-toolbar .toolbar-style {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  background-color: #7a6e6e;
+  cursor: pointer;
+  z-index: -1;
+  font-family: "微软雅黑", "SimSun", "宋体", "Arial Narrow";
+  -webkit-transition: all .3s;
+  -moz-transition: all  .3s;
+  -ms-transition: all .3s;
+  -o-transition: all  .3s;
+  transition: all .3s;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.header-top {
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+}
+.header-top .header-top-box {
+  position: relative;
+  z-index: 10;
+}
+.header-top .header-top-box .header-top-left {
+  position: relative;
+  float: left;
+  line-height: 30px;
+}
+.header-top .header-top-box .header-top-left .bj:hover .bj-l {
+  display: block;
+}
+.header-top .header-top-box .header-top-left .bj .bj-l {
+  position: absolute;
+  width: 310px;
+  top: 30px;
+  left: 0;
+  border: 1px solid #cccccc;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-left .bj .bj-l a {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  margin: 0 12px;
+  padding: 2px 5px;
+}
+.header-top .header-top-box .header-top-left .bj .bj-l a:hover {
+  background-color: #F1F1F1;
+}
+.header-top .header-top-box .header-top-right {
+  float: right;
+}
+.header-top .header-top-box .header-top-right .line {
+  margin-top: 8px;
+  width: 1px;
+  height: 14px;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #dddddd;
+}
+.header-top .header-top-box .header-top-right .my-jd {
+  position: relative;
+}
+.header-top .header-top-box .header-top-right .my-jd:hover .my-jd-info {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info {
+  position: absolute;
+  width: 260px;
+  height: 240px;
+  left: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info .jd-info-top {
+  overflow: hidden;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info .jd-info-top img {
+  float: left;
+  width: 77px;
+  height: 77px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 15px;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info .jd-info-top .jd-info-top-bottom {
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info .jd-info-top .jd-info-top-bottom a {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info .jd-info-top .jd-info-top-bottom a i {
+  font: bold 14px "Microsoft YaHei";
+}
+.header-top .header-top-box .header-top-right .my-jd .my-jd-info ul li {
+  border: none;
+  padding: 0 24px 0 15px;
+}
+.header-top .header-top-box .header-top-right .sj-jd {
+  position: relative;
+}
+.header-top .header-top-box .header-top-right .sj-jd:hover .sj-jd-code {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code {
+  position: absolute;
+  width: 282px;
+  left: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code .sj-jd-t {
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code .shouji90 {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code .shouji-info {
+  float: left;
+  margin-top: 10px;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code .shouji-info p {
+  height: 22px;
+  font-size: 14px;
+}
+.header-top .header-top-box .header-top-right .sj-jd .sj-jd-code .shouji-info img {
+  width: 25px;
+  height: 28px;
+  padding: 10px;
+}
+.header-top .header-top-box .header-top-right .gz-jd {
+  position: relative;
+}
+.header-top .header-top-box .header-top-right .gz-jd:hover .gz-jd-code {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .gz-jd .gz-jd-code {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-right .customerService {
+  position: relative;
+}
+.header-top .header-top-box .header-top-right .customerService:hover .cs-box {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .customerService .cs-box {
+  position: absolute;
+  width: 164px;
+  left: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-right .customerService .cs-box .cs-box-top {
+  border-bottom: 1px dashed #ccc;
+}
+.header-top .header-top-box .header-top-right .customerService .cs-box h3 {
+  margin-left: 10px;
+  font: bold 14px "Microsoft YaHei";
+  color: #666;
+}
+.header-top .header-top-box .header-top-right .customerService .cs-box .cs-box-style li {
+  border: none;
+  padding: 0 24px 0 10px;
+}
+.header-top .header-top-box .header-top-right .webNav:hover .webNav-link-wrap {
+  display: block;
+}
+.header-top .header-top-box .header-top-right .webNav .webNav-link-wrap {
+  position: absolute;
+  left: -2px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-top: none;
+  display: none;
+  background-color: #fff;
+}
+.header-top .header-top-box .header-top-right .webNav .webNav-link-wrap .webNav-link {
+  float: left;
+  width: 279px;
+  border-right: 1px solid #ddd;
+  padding-left: 10px;
+  margin: 20px 5px;
+}
+.header-top .header-top-box .header-top-right .webNav .webNav-link-wrap .webNav-link h4 {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.header-top .header-top-box .header-top-right .webNav .webNav-link-wrap .webNav-link ul {
+  overflow: hidden;
+}
+.header-top .header-top-box .header-top-right .webNav .webNav-link-wrap .webNav-link ul li {
+  float: left;
+  width: 50px;
+  border: none;
+  padding: 0 10px 0 24px;
+}
+.header-top .header-top-box li {
+  float: left;
+  padding: 0 7px 0 10px;
+  line-height: 30px;
+  height: 30px;
+  font-size: 12px;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+}
+.header-top .header-top-box li.text-style:hover {
+  background-color: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.header-top .header-top-box li.text-style:hover .turn {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.header-top .header-top-box li .turn {
+  display: inline-block;
+  position: relative;
+  width: 11px;
+  height: 7px;
+  margin-left: 6px;
+  overflow: hidden;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  -ms-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+.header-top .header-top-box li .turn .sj {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 18px;
+  top: -6px;
+  font-weight: 500;
+}
+.top-banner {
+  background-color: #f5245b;
+}
+.top-banner .top-ba {
+  position: relative;
+}
+.top-banner .top-ba .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.logo {
+  float: left;
+  padding: 20px 0 ;
+  width: 360px;
+}
+.search {
+  position: relative;
+  float: left;
+  margin-top: 30px;
+}
+.search input {
+  float: left;
+  width: 455px;
+  height: 24px;
+  padding: 4px;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  border: 2px solid #b61d1d;
+}
+.search .search-style {
+  float: left;
+  width: 82px;
+  height: 36px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #b61d1d;
+}
+.search ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.search ul li {
+  float: left;
+  margin-right: 14px;
+}
+.shoppingCar {
+  position: relative;
+  float: right;
+  margin-top: 30px;
+  width: 75px;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 65px;
+  border: 1px solid #dfdfdf;
+  padding: 0 28px 0 34px;
+}
+.shoppingCar .gw-img {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  background: url(../images/jd2015img.png) no-repeat 0 -58px;
+}
+.shoppingCar .gw-r {
+  font: 400 13px/13px simsun;
+  position: absolute;
+  top: 10px;
+  right: 11px;
+}
+.shoppingCar .shoppingCar-item {
+  position: absolute;
+  top: -4px;
+  right: 24px;
+  width: 14px;
+  height: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+  background-color: #c81623;
+  -webkit-border-radius: 11px 11px 11px 0px;
+  -moz-border-radius: 11px 11px 11px 0px;
+  border-radius: 11px 11px 11px 0px;
+  -webkit-animation: autoplay 1s ease infinite;
+  -moz-animation: autoplay 1s ease infinite;
+  -o-animation: autoplay 1s ease infinite;
+  -ms-animation: autoplay 1s ease infinite;
+  animation: autoplay 1s ease infinite;
+}
+@-webkit-keyframes autoplay {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.shoppingCar .shoppingCar-info {
+  position: absolute;
+  right: -1px;
+  width: 308px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid #ccc;
+  display: none;
+}
+.shoppingCar:hover .shoppingCar-info {
+  display: block;
+}
