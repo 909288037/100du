@@ -110,7 +110,7 @@ body {
 }
 .header-top .header-top-box {
   position: relative;
-  z-index: 10;
+  z-index: 99;
 }
 .header-top .header-top-box .header-top-left {
   position: relative;
@@ -403,6 +403,25 @@ body {
 .search ul li {
   float: left;
   margin-right: 14px;
+}
+.search ul.search-nav {
+  top: 35px;
+  left: 0;
+  width: 547px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 10;
+}
+.search ul.search-nav > li {
+  width: 537px;
+  float: none;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.search ul.search-nav > li:hover {
+  background-color: #ccc;
+  cursor: pointer;
 }
 .shoppingCar {
   position: relative;
