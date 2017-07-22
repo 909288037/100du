@@ -16,9 +16,9 @@ $(window).ready(function () {
             nowValue = $.trim(this.value);
             console.log(nowValue);
             if(nowValue != ""){
-                $(".search-nav").css({"display":"block"});
+                $(".search-nav").show();
             }else {
-                $(".search-nav").css({"display":"none"});
+                $(".search-nav").hide();
             }
             // console.log(nowValue);
             $.ajax({
