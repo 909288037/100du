@@ -25,7 +25,7 @@ $(window).ready(function () {
                 url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",
                 data:{wd:nowValue},
                 dataType:"jsonp",
-                // jsonp:"cb",
+                jsonp:"cb",
                 success:function(data){
                     $(".search-nav li").remove();
                     myData = data.s;
