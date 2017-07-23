@@ -16,16 +16,16 @@ $(window).ready(function () {
             nowValue = $.trim(this.value);
             console.log(nowValue);
             if(nowValue != ""){
-                $(".search-nav").css({"display":"block"});
+                $(".search-nav").show();
             }else {
-                $(".search-nav").css({"display":"none"});
+                $(".search-nav").hide();
             }
             // console.log(nowValue);
             $.ajax({
                 url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",
                 data:{wd:nowValue},
                 dataType:"jsonp",
-                jsonp:"cb",
+                // jsonp:"cb",
                 success:function(data){
                     $(".search-nav li").remove();
                     myData = data.s;
