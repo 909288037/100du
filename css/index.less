@@ -579,34 +579,40 @@ html,body{
     .jd-nav-side{
       width: 100%;
       background-color: #c81623;
-      .jd-nav-side-box{
-        width: 208px;
-        height: 31px;
-        font: 400 14px/31px "Microsoft YaHei";
-        color: #fff;
-        border-left: 2px solid #c81623;
+      .jd-nav-side-wrap{
+        .jd-nav-side-box{
+          position: relative;
+          width: 208px;
+          height: 31px;
+          font: 400 14px/31px "Microsoft YaHei";
+          color: #fff;
+          border-left: 2px solid #c81623;
+          &:hover{
+            background-color: #fff;
+            &>a,&>i{
+              color: red;
+            }
+          }
+          &>a{
+            margin-left: 10px;
+            color: #fff;
+          }
+          .jd-nav-side-sj{
+            position: absolute;
+            top: 9px;
+            right: 14px;
+            width: 4px;
+            height: 14px;
+            font: 400 9px/14px consolas;
+          }
+        }
         &:hover{
-          background-color: #fff;
           .jd-nav-side-items{
             display: block;
           }
-          &>a,&>i{
-            color: red;
-          }
-        }
-        &>a{
-          margin-left: 10px;
-          color: #fff;
-        }
-        .jd-nav-side-sj{
-          position: absolute;
-          top: 9px;
-          right: 14px;
-          width: 4px;
-          height: 14px;
-          font: 400 9px/14px consolas;
         }
       }
+
     }
   }
   //右边分类导航
@@ -768,4 +774,239 @@ html,body{
     }
   }
 }
+//轮播图
+.jd-slider{
+  position: absolute;
+  top: 61px;
+  left: 220px;
+  &>div.slider-fade-nav{
+    .prev{
+      left: 0;
+    }
+    .next{
+      right: 0;
+    }
+  }
+  .slider-fade{
+    width: 730px;
+    height: 454px;
+    overflow: hidden;
+    li{
+      position: absolute;
+    }
+  }
+  //轮播图索引
+  .slider-fade-index{
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    margin-left: -90px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.3);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    &>li{
+      float: left;
+      width: 10px;
+      height: 10px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #fff;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    .active{
+      background-color: #db192a;
+    }
+  }
+
+}
+//  轮播图箭头切图
+.slider-fade-nav{
+  //display: none;
+  i{
+    position: absolute;
+    display: block;
+    top: 50%;
+    margin-top: -31px;
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+    line-height: 60px;
+    text-align: center;
+    width: 30px;
+    height: 60px;
+    font-family: iconfont;
+    font-style: normal;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
+  .prev{
+
+  }
+  .next{
+
+  }
+}
+//  京东快报
+.jd-news{
+  position: absolute;
+  top: 61px;
+  right: 0;
+  .jd-news-t{
+    border: 1px solid #ccc;
+    height: 200px;
+  }
+  .jd-news-b{
+    width: 248px;
+    border: 1px solid #ccc;
+    //border-right: none;
+    height: 252px;
+    .news-title{
+      border-bottom: none;
+      border-right: 1px solid #ccc;
+    }
+    li{
+      width: 61px;
+      height: 70px;
+      float: left;
+      text-align: center;
+      border-top: 1px dashed #ccc;
+      border-right: 1px solid #ccc;
+        a{
+          i{
+            display: block;
+            width: 25px;
+            height: 25px;
+            margin: 10px 0 10px 16px;
+          }
+        }
+    }
+  }
+  .icon1{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 0;
+  }
+  .icon2{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -25px;
+  }
+  .icon3{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -50px;
+  }
+  .icon4{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -75px;
+  }
+  .icon5{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -100px;
+  }
+  .icon6{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -125px;
+  }
+  .icon7{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -150px;
+  }
+  .icon8{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -175px;
+  }
+  .icon9{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -200px;
+  }
+  .icon10{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -225px;
+  }
+  .icon11{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -250px;
+  }
+  .icon12{
+    background: url("../images/568dfdbdN4f7d7ca3.png") no-repeat 0 -275px;
+  }
+  .news-title{
+    border-bottom: 1px solid #ccc;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 9px;
+    font-weight: 600;
+    &>h3{
+      float: left;
+      font-size: 1.17em;
+      font-weight: bold;
+    }
+    &>a{
+      float: right;
+    }
+  }
+  .news-content{
+    width: 248px;
+    height: 166px;
+    border-top: none;
+    &>li{
+      padding: 8px 0 0 15px;
+      span{
+        margin-right: 5px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+//背景装饰
+.bjzs{
+  position: relative;
+  height: 469px;
+  z-index: -1;
+}
+.bjzs-img1{
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -10px;
+  z-index: -1;
+  background: url("../images/568a1258N2edec1ab.jpg") repeat-x;
+}
+.bjzs-img2{
+  position: absolute;
+  width: 100%;
+  height: 469px;
+  z-index: -1;
+  background: url("../images/568a0a8eNe8f4df82.jpg") no-repeat center 20px;
+}
+//今日推荐
+.today{
+  position: relative;
+  margin-top: 5px;
+  overflow: hidden;
+  //overflow: hidden;
+  &>.slider-fade-nav{
+    display: block;
+    .prev{
+      left: 210px;
+    }
+    .next{
+      right: 0;
+    }
+  }
+}
+.today-l{
+  float: left;
+  position: relative;
+  z-index: 5;
+}
+.today-r{
+  position: absolute;
+  left: 210px;
+  width: 3270px;
+  height: 164px;
+  ul{
+    float: left;
+    overflow: hidden;
+    width: 1020px;
+
+    }
+    li{
+      float: left;
+      margin-right: 5px;
+    }
+  }
 
