@@ -976,10 +976,11 @@ html,body{
 .today{
   position: relative;
   margin-top: 5px;
+  height: 164px;
   overflow: hidden;
-  //overflow: hidden;
+  margin-bottom: 20px;
   &>.slider-fade-nav{
-    display: block;
+    display: none;
     .prev{
       left: 210px;
     }
@@ -992,11 +993,13 @@ html,body{
   float: left;
   position: relative;
   z-index: 5;
+  padding-bottom: 13px;
+  background-color: #fff;
 }
 .today-r{
   position: absolute;
   left: 210px;
-  width: 3270px;
+  width: 4290px;
   height: 164px;
   ul{
     float: left;
@@ -1009,4 +1012,65 @@ html,body{
       margin-right: 5px;
     }
   }
+//猜你喜欢
+.guessyou{
+  margin-bottom: 20px;
+  .guessyou-t{
+    padding: 0 15px;
+    height: 36px;
+    h3{
+      background: url("../images/homebg.png") no-repeat 85px -98px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .guessyou-main{
+    ul{
+      padding-top: 20px;
+      overflow: hidden;
+      border: 1px solid #ccc;
 
+      li{
+        float: left;
+        width: 197px;
+        text-align: center;
+        padding-bottom: 15px;
+        &:nth-child(1) a >.p-info{
+          border-left: none;
+        }
+        a{
+          .p-img{
+            width: 100%;
+            margin-bottom: 10px;
+            img{
+              -webkit-transition: all .4s ease-out;
+              -moz-transition: all .4s ease-out;
+              -ms-transition: all .4s ease-out;
+              -o-transition: all .4s ease-out;
+              transition: all .4s ease-out;
+              &:hover{
+                transform: translateX(-10px);
+              }
+            }
+
+          }
+          .p-info{
+            text-align: left;
+            padding: 0 33px;
+            width: 130px;
+            height: 61px;
+            border-left: 1px solid #ccc;
+
+          }
+
+        }
+        s{
+          display: block;
+          margin-top: 5px;
+          font-size: 18px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

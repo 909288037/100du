@@ -923,10 +923,12 @@ body {
 .today {
   position: relative;
   margin-top: 5px;
+  height: 164px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .today > .slider-fade-nav {
-  display: block;
+  display: none;
 }
 .today > .slider-fade-nav .prev {
   left: 210px;
@@ -938,11 +940,13 @@ body {
   float: left;
   position: relative;
   z-index: 5;
+  padding-bottom: 13px;
+  background-color: #fff;
 }
 .today-r {
   position: absolute;
   left: 210px;
-  width: 3270px;
+  width: 4290px;
   height: 164px;
 }
 .today-r ul {
@@ -953,4 +957,57 @@ body {
 .today-r li {
   float: left;
   margin-right: 5px;
+}
+.guessyou {
+  margin-bottom: 20px;
+}
+.guessyou .guessyou-t {
+  padding: 0 15px;
+  height: 36px;
+}
+.guessyou .guessyou-t h3 {
+  background: url("../images/homebg.png") no-repeat 85px -98px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.guessyou .guessyou-main ul {
+  padding-top: 20px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.guessyou .guessyou-main ul li {
+  float: left;
+  width: 197px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.guessyou .guessyou-main ul li:nth-child(1) a > .p-info {
+  border-left: none;
+}
+.guessyou .guessyou-main ul li a .p-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.guessyou .guessyou-main ul li a .p-img img {
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.guessyou .guessyou-main ul li a .p-img img:hover {
+  transform: translateX(-10px);
+}
+.guessyou .guessyou-main ul li a .p-info {
+  text-align: left;
+  padding: 0 33px;
+  width: 130px;
+  height: 61px;
+  border-left: 1px solid #ccc;
+}
+.guessyou .guessyou-main ul li s {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: left;
 }
